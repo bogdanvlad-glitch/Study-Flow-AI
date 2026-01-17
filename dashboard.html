@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard – StudyFlow AI</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <div class="logo">📘 StudyFlow AI</div>
+  <a href="index.html" class="btn secondary">Déconnexion</a>
+</header>
+
+<section class="section">
+  <h2>Résumé intelligent</h2>
+
+  <textarea id="course" placeholder="Colle ton cours ici..."></textarea>
+
+  <select id="mode">
+    <option>Résumé court</option>
+    <option>Résumé détaillé</option>
+    <option>Points clés</option>
+  </select>
+
+  <button onclick="generateSummary()">Générer le résumé</button>
+
+  <div class="card" id="result">
+    Le résumé apparaîtra ici ✨
+  </div>
+</section>
+
+<section class="section grid dark">
+  <div class="card">📄 Résumés récents</div>
+  <div class="card">🧾 Fiches de révision</div>
+  <div class="card">📈 Progression</div>
+  <div class="card">⏱ Temps gagné : +6h</div>
+</section>
+
+</body>
+<script src="app.js"></script>
+</html>
